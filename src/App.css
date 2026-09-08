@@ -1,0 +1,132 @@
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calendar-header h2 {
+  margin: 0;
+}
+
+.calendar-header button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background: #2563eb;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 12px 0;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-left: 1px solid #ddd;
+}
+
+.calendar-day {
+  min-height: 120px;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  background: white;
+}
+
+.calendar-day:hover {
+  background: #f0f7ff;
+}
+
+.day-number {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.post-card {
+  background: #2563eb;
+  color: white;
+  padding: 6px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: grab;
+  font-size: 12px;
+}
+
+.post-card:active {
+  cursor: grabbing;
+}
+
+.post-card strong {
+  display: block;
+}
+
+.post-card small {
+  display: block;
+  margin-top: 3px;
+  opacity: 0.9;
+}
+
+.post-details {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+.post-details h2 {
+  margin-top: 0;
+}
+
+.post-details button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .app {
+    padding: 15px;
+  }
+
+  .calendar-day {
+    min-height: 90px;
+    padding: 4px;
+  }
+
+  .post-card {
+    font-size: 10px;
+    padding: 4px;
+  }
+}
